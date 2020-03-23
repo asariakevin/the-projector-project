@@ -10,7 +10,7 @@ while(True):
    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
    d = frame.flatten ()
    s = d.tostring ()
-   for i in xrange(20):
+   for i in range(20):
        sock.sendto (s[i*46080:(i+1)*46080],(UDP_IP, UDP_PORT))
 
 
